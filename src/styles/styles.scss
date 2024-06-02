@@ -1,3 +1,8 @@
 @import './reset/reset';
 @import './font/font';
-@import './color/color'
+@import './color/color';
+
+html, body, #root{
+    height: 100%;
+    color: var(--primary-black);
+}

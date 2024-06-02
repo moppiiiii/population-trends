@@ -9,12 +9,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 8px 16px;
+    padding: 12px 0;
+    background-color: var(--background-white);
     box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
 }
 
 @include max("sp") {
     .header-container {
         justify-content: start;
+        padding-inline: 16px;
     }
 }

@@ -3,8 +3,6 @@
 
 .heading-primary {
   @include pc-title-h1;
-
-  color: var(--primary-black);
 }
 
 @include max("sp") {
