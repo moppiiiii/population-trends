@@ -1,7 +1,9 @@
 import React from 'react';
 
+import NotFoundTemplate from '@/components/templates/not-found/NotFound.template';
+
 const NotFoundPage: React.FC = () => {
-  return <div>NotFoundPage</div>;
+  return <NotFoundTemplate />;
 };
 
 NotFoundPage.whyDidYouRender = true;

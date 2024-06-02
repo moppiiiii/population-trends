@@ -13,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/population-trend" />} />
         <Route path="/population-trend" element={<PopulationTrendPage />} />
-        <Route path="/*" element={<NotFoundPage />} />
+        <Route path="/404" element={<NotFoundPage />} />
+        <Route path="/*" element={<Navigate to="/404" />} />
       </Routes>
     </BrowserRouter>
   );

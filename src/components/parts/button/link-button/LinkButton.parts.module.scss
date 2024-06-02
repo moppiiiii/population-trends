@@ -1,0 +1,23 @@
+@import "@/styles/typograpy/typograpy";
+@import "@/styles/responsive/responsive";
+
+.link-button {
+    @include button-m;
+
+    padding: 18px 48px;
+    color: var(--primary-black);
+    border: 1px solid var(--separate-primary);
+    border-radius: 40px;
+
+    &:hover {
+        border: 1px solid var(--separate-secondary);
+    }
+}
+
+@include max("sp") {
+    .link-button {
+        @include button-s;
+    
+        padding: 18px 48px;
+    }
+  }

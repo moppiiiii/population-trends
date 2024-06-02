@@ -1,0 +1,14 @@
+@import "@/styles/typograpy/typograpy";
+@import "@/styles/responsive/responsive";
+
+.heading-secondary {
+  @include pc-title-h2;
+
+  color: var(--primary-black);
+}
+
+@include max("sp") {
+  .heading-secondary {
+    @include sp-title-h2;
+  }
+}
