@@ -1,0 +1,25 @@
+$breakpoints: (
+  "sp": 768px,
+  "tab": 1024px,
+);
+
+@mixin min($breakpoint) {
+  /* stylelint-disable-next-line scss/no-global-function-names */
+  @media screen and (width >= #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin max($breakpoint) {
+  /* stylelint-disable-next-line scss/no-global-function-names */
+  @media screen and (width < #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin between($minBreakpoint, $maxBreakpoint) {
+  /* stylelint-disable-next-line scss/no-global-function-names */
+  @media screen and (#{map-get($breakpoints, $minBreakpoint)} <= width < #{map-get($breakpoints, $maxBreakpoint)}) {
+    @content;
+  }
+}
