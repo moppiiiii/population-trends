@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { HeadingSecondaryProps } from '../type';
+import type { HeadingSecondaryProps } from '../types';
 import HeadingSecondaryStyle from './HeadingSecondary.parts.module.scss';
 
 const HeadingSecondary: React.FC<HeadingSecondaryProps> = ({ children }) => {

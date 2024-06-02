@@ -1,11 +1,11 @@
-@import "@/styles/typograpy/typograpy";
-@import "@/styles/responsive/responsive";
+@import '@/styles/typograpy/typograpy';
+@import '@/styles/responsive/responsive';
 
 .heading-primary {
   @include pc-title-h1;
 }
 
-@include max("sp") {
+@include max('sp') {
   .heading-primary {
     @include sp-title-h1;
   }

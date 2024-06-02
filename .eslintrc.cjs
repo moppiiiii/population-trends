@@ -35,7 +35,6 @@ const typescriptESLintRules = {
 };
 
 /** @type {import("@types/eslint").Linter.Config} */
-
 module.exports = {
   root: true,
   parserOptions: {
@@ -84,7 +83,7 @@ module.exports = {
       },
     },
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['*.ts'],
       plugins: ['@typescript-eslint'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
@@ -94,6 +93,24 @@ module.exports = {
       },
       rules: {
         ...typescriptESLintRules,
+        'require-await': 'off',
+        'no-floating-promises': 'off',
+        'no-unsafe-return': 'off',
+      },
+    },
+    {
+      files: ['*.tsx'],
+      plugins: ['@typescript-eslint'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: ['./tsconfig.json'],
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+      rules: {
+        ...typescriptESLintRules,
+        '@typescript-eslint/require-await': 'off',
+        '@typescript-eslint/no-floating-promises': 'off',
       },
     },
   ],

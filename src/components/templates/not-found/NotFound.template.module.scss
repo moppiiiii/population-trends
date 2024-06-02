@@ -1,45 +1,47 @@
-@import "@/styles/typograpy/typograpy";
-@import "@/styles/responsive/responsive";
+@import '@/styles/typograpy/typograpy';
+@import '@/styles/responsive/responsive';
 
 .not-found-container {
   display: grid;
   grid-template-rows: auto 1fr;
   height: 100%;
+  background-color: var(--background-primary);
 
-    > .content-wrapper {
+  > .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    padding: 60px 32px;
+    margin: 60px 32px;
+    background-color: var(--background-white);
+    border-radius: 16px;
+
+    > .not-found-title {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 36px;
       align-items: center;
-      padding: 60px 32px;
-      background-color: var(--background-primary);
-  
-      > .not-found-title {
-        display: flex;
-        flex-direction: column;
-        gap: 36px;
-        align-items: center;
-  
-        > .not-found-sigh {
-          @include body-emoji
-        }
+
+      > .not-found-sigh {
+        @include body-emoji;
       }
+    }
+
+    > .not-found-description {
+      @include body-m;
+    }
+  }
+}
+
+@include max('sp') {
+  .not-found-container {
+    > .content-wrapper {
+      padding: 32px 16px;
 
       > .not-found-description {
-        @include body-m;
+        @include body-s;
       }
     }
   }
-
-  @include max("sp") {
-    .not-found-container {
-      > .content-wrapper {
-        padding: 32px 16px;
-  
-        > .not-found-description {
-          @include body-s;
-        }
-      }
-    }
-  }
-
+}

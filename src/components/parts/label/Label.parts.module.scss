@@ -1,12 +1,12 @@
 @import '@/styles/typograpy/typograpy';
 @import '@/styles/responsive/responsive';
 
-.heading-secondary {
-  @include pc-title-h2;
+.label {
+  @include body-l;
 }
 
 @include max('sp') {
-  .heading-secondary {
-    @include sp-title-h2;
+  .label {
+    @include body-s;
   }
 }

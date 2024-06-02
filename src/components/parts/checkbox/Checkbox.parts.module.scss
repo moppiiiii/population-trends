@@ -1,0 +1,26 @@
+@import '@/styles/typograpy/typograpy';
+@import '@/styles/responsive/responsive';
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+
+  > .checkbox-input {
+    cursor: pointer;
+  }
+
+  > .checkbox-label {
+    @include body-m;
+  }
+}
+
+@include max('sp') {
+  .checkbox {
+    gap: 4px;
+
+    > .checkbox-label {
+      @include body-xs;
+    }
+  }
+}

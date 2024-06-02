@@ -15,6 +15,10 @@
   @include font(30px, 700, 1.4);
 }
 
+@mixin pc-title-h3 {
+  @include font(24px, 700, 1.4);
+}
+
 // sp > title
 @mixin sp-title-h1 {
   @include font(30px, 700, 1.4);
@@ -24,11 +28,14 @@
   @include font(24px, 700, 1.4);
 }
 
+@mixin sp-title-h3 {
+  @include font(18px, 700, 1.4);
+}
+
 // body
 @mixin body-emoji {
   @include font(60px, 700, 1.4);
 }
-
 
 @mixin body-l {
   @include font(20px, 700, 1.4);
