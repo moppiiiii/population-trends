@@ -1,0 +1,60 @@
+// 共通のフォントスタイル
+@mixin font($font-size, $font-weight, $line-height, $letter-spacing: 0) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+// pc > title
+@mixin pc-title-h1 {
+  @include font(36px, 700, 1.4);
+}
+
+@mixin pc-title-h2 {
+  @include font(30px, 700, 1.4);
+}
+
+// sp > title
+@mixin sp-title-h1 {
+  @include font(30px, 700, 1.4);
+}
+
+@mixin sp-title-h2 {
+  @include font(24px, 700, 1.4);
+}
+
+// body
+@mixin body-emoji {
+  @include font(60px, 700, 1.4);
+}
+
+
+@mixin body-l {
+  @include font(20px, 700, 1.4);
+}
+
+@mixin body-m {
+  @include font(16px, 400, 1.7);
+}
+
+@mixin body-s {
+  @include font(14px, 400, 1.5);
+}
+
+@mixin body-xs {
+  @include font(12px, 400, 1.4);
+}
+
+// ## button
+@mixin button-l {
+  @include font(18px, 700, 1.4);
+}
+
+@mixin button-m {
+  @include font(16px, 700, 1.4);
+}
+
+@mixin button-s {
+  @include font(14px, 700, 1.4);
+}

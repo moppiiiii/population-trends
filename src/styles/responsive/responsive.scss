@@ -1,6 +1,6 @@
 $breakpoints: (
-  "sp": 768px,
-  "tab": 1024px,
+  'sp': 768px,
+  'tab': 1024px,
 );
 
 @mixin min($breakpoint) {

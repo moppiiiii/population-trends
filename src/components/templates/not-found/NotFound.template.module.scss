@@ -1,0 +1,41 @@
+@import "@/styles/typograpy/typograpy";
+@import "@/styles/responsive/responsive";
+
+.not-found-container {
+    > .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 32px;
+  
+      > .not-found-title {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        align-items: center;
+  
+        > .not-found-sigh {
+          @include body-emoji
+        }
+      }
+
+      > .not-found-description {
+        @include body-m;
+      }
+    }
+  }
+
+  @include max("sp") {
+    .not-found-container {
+      > .content-wrapper {
+        padding: 32px 16px;
+  
+        > .not-found-description {
+          @include body-s;
+        }
+      }
+    }
+  }
+
