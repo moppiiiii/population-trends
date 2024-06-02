@@ -53,6 +53,9 @@ devDependencies:
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.11.0
     version: 7.11.0(@typescript-eslint/parser@7.11.0)(eslint@8.57.0)(typescript@4.9.5)
+  '@welldone-software/why-did-you-render':
+    specifier: ^8.0.1
+    version: 8.0.1(react@18.3.1)
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.57.0)
@@ -3111,6 +3114,15 @@ packages:
       '@webassemblyjs/ast': 1.12.1
       '@xtuc/long': 4.2.2
     dev: false
+
+  /@welldone-software/why-did-you-render@8.0.1(react@18.3.1):
+    resolution: {integrity: sha512-PtLBjiHNX04gDPheMeAQP16S24JV3SOW6wGDUrm4bFPZmofmmflgvd4Kacf/jhB8zlX6equ8m3t6CS+OxA3Q4g==}
+    peerDependencies:
+      react: ^18
+    dependencies:
+      lodash: 4.17.21
+      react: 18.3.1
+    dev: true
 
   /@xtuc/ieee754@1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -7414,14 +7426,12 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: false
 
   /loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
@@ -9203,7 +9213,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
