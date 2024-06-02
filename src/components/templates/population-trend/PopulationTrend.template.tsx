@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '@/components/parts/header/Header.parts';
+import Header from '@/components/organisms/header/Header.organism';
 
 import PopulationTrendStyle from './PopulationTrend.template.module.scss';
 
