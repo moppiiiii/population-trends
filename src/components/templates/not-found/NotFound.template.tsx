@@ -1,7 +1,7 @@
 import React from 'react';
 
+import Header from '@/components/organisms/header/Header.organism';
 import LinkButton from '@/components/parts/button/link-button/LinkButton.parts';
-import Header from '@/components/parts/header/Header.parts';
 import HeadingSecondary from '@/components/parts/heading/heading-secondary/HeadingSecondary.parts';
 
 import NotFoundStyle from './NotFound.template.module.scss';

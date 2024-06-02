@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeadingPrimary from '@/components/parts/heading/heading-primary/HeadingPrimary.parts';
 
-import HeaderStyle from './Header.parts.module.scss';
+import HeaderStyle from './Header.organism.module.scss';
 import type { HeaderProps } from './type';
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
