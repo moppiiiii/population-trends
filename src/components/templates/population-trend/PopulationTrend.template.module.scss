@@ -1,0 +1,14 @@
+@import "@/styles/typograpy/typograpy";
+@import "@/styles/responsive/responsive";
+
+.population-trend-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+
+    > .content-wrapper {
+        padding: 60px 32px;
+        background-color: var(--background-primary);
+    }
+    
+}
