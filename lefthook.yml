@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  commands:
+    audit:
+      run: pnpm audit
+    eslint:fix:
+      glob: '*.{ts,tsx}'
+      run: npx eslint --fix {staged_files} && git add {staged_files}
+    stylelint:fix:
+      glob: '*.{scss}'
+      run: stylelint --fix {staged_files} && git add {staged_files}
+    prettier:fix:
+      glob: '*.{ts,tsx}'
+      run: npx prettier --write {staged_files} && git add {staged_files}
