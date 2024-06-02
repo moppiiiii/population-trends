@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { HeadingPrimaryProps } from '../type';
+import type { HeadingPrimaryProps } from '../types';
 import HeadingPrimaryStyle from './HeadingPrimary.parts.module.scss';
 
 const HeadingPrimary: React.FC<HeadingPrimaryProps> = ({ children }) => {

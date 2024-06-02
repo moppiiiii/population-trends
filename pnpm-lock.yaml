@@ -21,6 +21,9 @@ dependencies:
   '@testing-library/user-event':
     specifier: ^13.5.0
     version: 13.5.0(@testing-library/dom@10.1.0)
+  '@types/highcharts':
+    specifier: ^7.0.0
+    version: 7.0.0
   '@types/jest':
     specifier: ^27.5.2
     version: 27.5.2
@@ -30,6 +33,12 @@ dependencies:
   '@types/react-dom':
     specifier: ^18.3.0
     version: 18.3.0
+  highcharts:
+    specifier: ^11.4.3
+    version: 11.4.3
+  highcharts-react-official:
+    specifier: ^3.2.1
+    version: 3.2.1(highcharts@11.4.3)(react@18.3.1)
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -42,6 +51,9 @@ dependencies:
   react-scripts:
     specifier: 5.0.1
     version: 5.0.1(@babel/plugin-syntax-flow@7.24.6)(@babel/plugin-transform-react-jsx@7.24.6)(eslint@8.57.0)(react@18.3.1)(sass@1.77.4)(typescript@4.9.5)
+  remeda:
+    specifier: ^2.0.0
+    version: 2.0.0
   sass:
     specifier: ^1.77.4
     version: 1.77.4
@@ -51,6 +63,9 @@ dependencies:
   web-vitals:
     specifier: ^2.1.4
     version: 2.1.4
+  zod:
+    specifier: ^3.23.8
+    version: 3.23.8
 
 devDependencies:
   '@types/node':
@@ -2625,6 +2640,13 @@ packages:
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
     dependencies:
       '@types/node': 16.18.97
+    dev: false
+
+  /@types/highcharts@7.0.0:
+    resolution: {integrity: sha512-YDevls0s9uqz6VEbchxp+NEaKssAPq5aDZgqEUpxOIUCQEncQtXxibp1w4lvgKyhM4qDejAcSZ+DKfA/kzqR0A==}
+    deprecated: This is a stub types definition. highcharts provides its own type definitions, so you do not need this installed.
+    dependencies:
+      highcharts: 11.4.3
     dev: false
 
   /@types/html-minifier-terser@6.1.0:
@@ -6029,6 +6051,20 @@ packages:
   /he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: false
+
+  /highcharts-react-official@3.2.1(highcharts@11.4.3)(react@18.3.1):
+    resolution: {integrity: sha512-hyQTX7ezCxl7JqumaWiGsroGWalzh24GedQIgO3vJbkGOZ6ySRAltIYjfxhrq4HszJOySZegotEF7v+haQ75UA==}
+    peerDependencies:
+      highcharts: '>=6.0.0'
+      react: '>=16.8.0'
+    dependencies:
+      highcharts: 11.4.3
+      react: 18.3.1
+    dev: false
+
+  /highcharts@11.4.3:
+    resolution: {integrity: sha512-rMmvYvcdwyUVfnRPfiZ0PnW6TgVhoS0FTBI8fc4Fp8l8ocoC9dMecvxS6E6tm7h7LrnSGoEo3b/0IRHuLatD2w==}
     dev: false
 
   /hoopy@0.1.4:
@@ -9498,6 +9534,12 @@ packages:
     engines: {node: '>= 0.10'}
     dev: false
 
+  /remeda@2.0.0:
+    resolution: {integrity: sha512-KBvW1gjFitqspnhSV+SLAy3g13Kj/NLb/3lLZyIIFC+D+qOYT7UnSQfNBc3+uh9KDBjFfu6lvcuV52TQhubuJg==}
+    dependencies:
+      type-fest: 4.18.3
+    dev: false
+
   /renderkid@3.0.0:
     resolution: {integrity: sha512-q/7VIQA8lmM1hF+jn+sFSPWGlMkSAeNYcPLmDQx2zzuiDfaLrOmumR8iaUKlenFgh0XRPIUeSPlH3A+AW3Z5pg==}
     dependencies:
@@ -10758,6 +10800,11 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  /type-fest@4.18.3:
+    resolution: {integrity: sha512-Q08/0IrpvM+NMY9PA2rti9Jb+JejTddwmwmVQGskAlhtcrw1wsRzoR6ode6mR+OAabNa75w/dxedSUY2mlphaQ==}
+    engines: {node: '>=16'}
+    dev: false
+
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -11550,3 +11597,7 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  /zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+    dev: false

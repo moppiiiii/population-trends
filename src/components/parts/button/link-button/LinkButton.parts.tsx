@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { LinkButtonProps } from '../type';
+import type { LinkButtonProps } from '../types';
 import LinkButtonStyle from './LinkButton.parts.module.scss';
 
 const LinkButton: React.FC<LinkButtonProps> = ({ children, href }) => {
