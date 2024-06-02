@@ -3,11 +3,7 @@ import './styles/styles.scss';
 import React from 'react';
 
 function App() {
-  return (
-    <div>
-      React APP
-    </div>
-  );
+  return <div>React APP</div>;
 }
 
 export default App;
